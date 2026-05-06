@@ -1,43 +1,55 @@
-# Astro Starter Kit: Minimal
+# Prácticas de Astro - PPW
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+**Autor:** David Alejandro Larriva Castillo  
+**Institución:** Universidad Politécnica Salesiana 
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Propósito del Proyecto
+Este repositorio contiene el proyecto incremental `astro-campus`, un portal de contenido construido con Astro que se irá desarrollando módulo a módulo a lo largo de la asignatura.
 
-## 🚀 Project Structure
+### Práctica 01: Instalación y Configuración
+- Inicialización del proyecto base de Astro utilizando la plantilla minimalista.
+- Configuración del entorno en el archivo `astro.config.mjs` estableciendo la salida como estática (`output: 'static'`).
+- Modificación inicial del archivo `index.astro` para establecer la página de bienvenida.
+- Verificación del servidor de desarrollo y del proceso de empaquetado (build) para producción
 
-Inside of your Astro project, you'll see the following folders and files:
+### Práctica 02: Fundamentos de Astro
+- Creación de un componente reutilizable `RecursoCard.astro` con tipado estricto mediante `interface Props`.
+- Desarrollo de la página `about.astro` integrando información del equipo y renderizando una lista de herramientas.
+- Implementación de renderizado condicional moderno en Astro para validar variables de entorno (modo producción vs. modo desarrollo).
+- Integración de componentes dentro de la página de inicio iterando sobre arreglos de datos.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+---
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Evidencias
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Las capturas de pantalla que validan la correcta ejecución de los comandos y la visualización de los componentes se encuentran en el directorio `assets/`.
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Evidencias - Práctica 01
 
-## 🧞 Commands
+**1. Proceso de creación del proyecto:**
+![Instalación](assets/01-instalacion.png)
 
-All commands are run from the root of the project, from a terminal:
+**2. Salida de pnpm astro info:**
+![Astro Info](assets/01-astro-info.png)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+**3. Sitio corriendo en localhost:4321:**
+![Localhost](assets/01-localhost.png)
 
-## 👀 Want to learn more?
+**4. Salida del build de producción:**
+![Build](assets/01-build.png)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Evidencias - Práctica 02
+
+**5. Página de inicio (index) mostrando la lista de recursos con tarjetas:**
+![Index Practica 2](assets/02-index.png)
+
+**6. Página Acerca del proyecto (about) con renderizado condicional:**
+![About Practica 2](assets/02-about.png)
+
+---
+
+## Instrucciones de Ejecución
+Para arrancar el servidor de desarrollo local, clona este repositorio y ejecuta los siguientes comandos en la terminal utilizando `pnpm`:
+```bash
+pnpm install
+pnpm dev
